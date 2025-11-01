@@ -14,7 +14,7 @@ export enum MqttConnectionStatus {
 
 // 默认MQTT配置
 const DEFAULT_MQTT_CONFIG = {
-  url: 'ws://120.79.175.61:23408/mqtt',
+  url: 'wss://120.79.175.61:23408/mqtt',
   clientId: `frontend_client_1`,
   username: '',
   password: '123456'
@@ -80,7 +80,7 @@ export const useMqttStore = defineStore('mqtt', () => {
         clientId: mqttConfig.value.clientId,
         username: mqttConfig.value.username || '',
         password: mqttConfig.value.password || '',
-        protocol: 'ws', // 明确指定协议
+        protocol: 'wss', // 明确指定协议
         reconnectPeriod: 5000, // 自动重连间隔
         connectTimeout: 30000, // 连接超时时间
         keepalive: 60, // 保持连接间隔
