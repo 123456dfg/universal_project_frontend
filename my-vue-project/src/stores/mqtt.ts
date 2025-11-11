@@ -14,7 +14,7 @@ export enum MqttConnectionStatus {
 
 // 默认MQTT配置
 const DEFAULT_MQTT_CONFIG = {
-  url: 'wss://120.79.175.61:23408/mqtt',
+  url: 'wss://120.79.175.61:23407/mqtt',
   clientId: `frontend_client_1`,
   username: '',
   password: '123456'
